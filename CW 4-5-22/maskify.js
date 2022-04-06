@@ -3,6 +3,7 @@
 // Your task is to write a function maskify, which changes all but the last four characters into '#'.
 
 // return masked string
+// https://www.codewars.com/kata/5412509bd436bd33920011bc
 
 function maskify(cc) {
     return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4)
