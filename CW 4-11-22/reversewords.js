@@ -4,7 +4,7 @@ Complete the function that accepts a string parameter, and reverses each word in
 Examples
 
 "This is an example!" ==> "sihT si na !elpmaxe"
-"double  spaces"      ==> "elbuod  secaps"
+"double  spaces" ==> "elbuod  secaps"
 */
 
 
