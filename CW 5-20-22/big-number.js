@@ -18,10 +18,10 @@ Error checking for text strings or other invalid inputs is not required, only va
 */
 
 function narcissistic(value) {
-    let exp = String(value).split('')
-    let sum = 0
-    for(let i = 0; i < exp.length; i++){
+    let exp = String(value).split('') // Turn the value into a string and turn that string into an array using .split() method.
+    let sum = 0 // Initialize a total variable and set to 0 
+    for(let i = 0; i < exp.length; i++){ // Use for loop to increase the sum variable by the value of the base of each number in the original number (which can be found by looping through the array we instantiated), and the exponent which in this case is the length of the array, or how many digits make up the original parameter. 
       sum += Math.pow(exp[i], exp.length)
     }
-    return sum == value
+    return sum == value // If the total sum found by looping over the array is equal to the original parameter, then return true, otherwise return false.
   }
